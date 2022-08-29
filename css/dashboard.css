@@ -1,0 +1,128 @@
+.container-fluid {
+  font-size: 16px;
+}
+
+.container-fluid menu {
+  margin-top: 0%;
+  height: 100vh;
+  background-color: rgba(19, 73, 87, 0.822);
+}
+
+.container-fluid menu img {
+  width: 100px;
+  height: 100px;
+  margin: 25%;
+}
+
+.container-fluid menu ul li {
+  list-style: none;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.container-fluid menu ul li a {
+  color: rgba(19, 65, 83, 0.623);
+  font-size: 18px;
+  text-decoration: none;
+  -webkit-transition: all .8s;
+  transition: all .8s;
+}
+
+.container-fluid menu ul li a:hover {
+  color: white;
+}
+
+.container-fluid .dash-content .dash-content1 {
+  height: 12vh;
+  padding: 10px;
+  background-color: rgba(19, 73, 87, 0.822);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container-fluid .dash-content .dash-content2 {
+  margin: 2%;
+}
+
+.container-fluid .dash-content .dash-content2 .jb {
+  margin: 8%;
+}
+
+.container-fluid .dash-content .dash-content2 .jb .jumbotron {
+  margin-left: 20px;
+  width: 400px;
+  height: 120px;
+  -webkit-transition: .8s;
+  transition: .8s;
+}
+
+.container-fluid .dash-content .dash-content2 .jb .jumbotron:hover {
+  background-color: rgba(19, 73, 87, 0.822);
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.container-fluid .dash-content .dash-content2 #canvas {
+  width: 640px;
+  height: auto;
+}
+
+.container-fluid .dash-content .dash-content2 fieldset {
+  margin: 2%;
+}
+
+.container-fluid .dash-content .dash-content2 fieldset form {
+  margin: 1% 6%;
+}
+
+.container-fluid .dash-content .dash-content2 fieldset form input {
+  list-style-type: none;
+}
+
+.container-fluid .dash-content .dash-content2 fieldset:nth-child(1) {
+  border: 1px solid #750d67;
+}
+
+.container-fluid .dash-content .dash-content2 table {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-fluid .dash-content .dash-content2 table thead tr {
+  background-color: #3860b8;
+}
+
+.container-fluid .dash-content .dash-content2 table tbody tr i {
+  cursor: pointer;
+}
+
+.container-fluid .dash-content .dash-content2 table tbody tr:nth-child(even) {
+  background-color: rgba(93, 114, 112, 0.658);
+}
+
+.container-fluid .dash-content .dash-content2 table tbody tr:nth-child(odd) {
+  background-color: rgba(90, 80, 80, 0.26);
+}
+
+.container-fluid .dash-content .dash-content2 .tablec {
+  margin: 3% 0%;
+}
+
+.container-fluid .dash-content .editAchat {
+  margin-top: 10%;
+}
+/*# sourceMappingURL=dashboard.css.map */

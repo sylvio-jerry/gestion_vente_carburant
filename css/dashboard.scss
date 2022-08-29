@@ -1,0 +1,112 @@
+$green: rgba(19, 73, 87, 0.822);
+$black: rgba(19, 65, 83, 0.623);
+$fontSizeli: 16px;
+@mixin flexbox($dir, $wrap, $align, $just) {
+    display: flex;
+    flex-direction:$dir;
+    flex-wrap: $wrap;
+    align-items: $align; 
+    justify-content: $just;
+}
+
+.container-fluid{
+    font-size: $fontSizeli;
+    menu{
+        // border: 1px solid black;
+        margin-top: 0%;
+        height: 100vh;
+        background-color:$green;
+        img{
+            width: 100px;
+            height: 100px;
+            margin: 25%;
+        }
+        ul{
+            // border: 1px solid red; 
+            li{
+                list-style: none;
+                padding: 10px;
+                font-size: $fontSizeli;
+                a{
+                    color: $black;
+                    font-size: 18px;
+                    text-decoration: none;
+                    transition: all .8s;
+                    &:hover{
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+    .dash-content{
+        // background-color: rgb(145, 64, 64);
+        .dash-content1{
+            height: 12vh;
+            padding: 10px;
+            // border: 2px solid rgb(109, 107, 19); 
+            background-color:$green; 
+            @include flexbox(row, nowrap, center, space-between);
+        }
+        .dash-content2{
+            margin: 2%;
+            .jb{
+                margin: 8%;
+                // border: 2px solid red;
+                .jumbotron{
+                    margin-left: 20px;
+                    width: 400px;
+                    height: 120px;
+                    transition: .8s;
+                    &:hover{
+                        background-color: $green;
+                        transform: scale(0.9);
+                    }
+                }
+            }
+            #canvas{
+                width: 640px;
+                height: auto;
+            }
+            fieldset{
+                margin: 2%;
+                form{
+                    margin: 1% 6%;
+                    input{
+                        list-style-type: none;
+                    }
+                }
+                &:nth-child(1){
+                    border: 1px solid rgb(117, 13, 103);
+                }
+            }
+            table{
+                align-items: center;
+                thead{
+                    tr{
+                        background-color: rgb(56, 96, 184);
+                    }
+                } 
+                tbody{
+                    tr{
+                        i{
+                            cursor: pointer;
+                        }
+                        &:nth-child(even){
+                            background-color: rgba(93, 114, 112, 0.658);
+                        }
+                        &:nth-child(odd){
+                            background-color: rgba(90, 80, 80, 0.26);
+                        }
+                    }
+                }
+            }
+            .tablec{
+                margin: 3% 0%;
+            }
+        }
+        .editAchat{
+            margin-top: 10%;
+        }
+    }
+}

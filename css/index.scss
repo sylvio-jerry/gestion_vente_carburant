@@ -1,0 +1,59 @@
+@mixin flexbox($dir, $wrap, $align, $just) {
+    display: flex;
+    flex-direction:$dir;
+    flex-wrap: $wrap;
+    align-items: $align; 
+    justify-content: $just;
+}
+body{
+    background-color: rgba(53, 113, 160, 0.89);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    .container{
+        header{
+            //border: 2px dotted rgba(167, 1, 15, 0.897);
+            .section{
+                h2{
+                    //border: 1px solid rgb(37, 13, 173);
+                    padding: 14px;
+                    margin: 30% 15px;
+                }
+                .link{
+                    //border: 1px solid rgb(175, 10, 148);
+                    padding: 10px;
+                    margin: 10px;
+                    @include flexbox(row,nowrap,center,space-evenly);
+                    a{
+                        width: 120px;
+                        height: 50px;
+                        text-align: center;
+                    }
+                }
+                .modal{
+                    top: 10%;
+                    .bg-success{
+                        background-color: rgb(32, 179, 51);
+                    }
+                    .modal-body{
+                        .form-group{
+                            #inscrire{
+                                width: 100%;
+                                background-color: rgb(32, 179, 51);
+                                top:0%;
+                            }
+                            label{
+                                font-size: 16px;    
+                                &:hover{
+                                    color: red;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+                #inscrire{
+                    top:-3%;
+                }
+            }
+        }
+    }
+}

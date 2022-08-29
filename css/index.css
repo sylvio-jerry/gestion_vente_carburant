@@ -1,0 +1,63 @@
+body {
+  background-color: rgba(53, 113, 160, 0.89);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body .container header .section h2 {
+  padding: 14px;
+  margin: 30% 15px;
+}
+
+body .container header .section .link {
+  padding: 10px;
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body .container header .section .link a {
+  width: 120px;
+  height: 50px;
+  text-align: center;
+}
+
+body .container header .section .modal {
+  top: 10%;
+}
+
+body .container header .section .modal .bg-success {
+  background-color: #20b333;
+}
+
+body .container header .section .modal .modal-body .form-group #inscrire {
+  width: 100%;
+  background-color: #20b333;
+  top: 0%;
+}
+
+body .container header .section .modal .modal-body .form-group label {
+  font-size: 16px;
+}
+
+body .container header .section .modal .modal-body .form-group label:hover {
+  color: red;
+  cursor: pointer;
+}
+
+body .container header .section #inscrire {
+  top: -3%;
+}
+/*# sourceMappingURL=index.css.map */
